@@ -1,0 +1,29 @@
+﻿<Window x:Class="Pizzer.InsertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pizzer"
+        mc:Ignorable="d"
+        Title="Kunde" Height="650" Width="800">
+    <Grid Background="#C9c9c7">
+        <TextBox x:Name="tbxNachname" BorderThickness="2" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,30,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" Foreground="Black"/>
+        <TextBox x:Name="tbxVorname" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,104,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <TextBox x:Name="tbxStrasse" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,178,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <TextBox x:Name="tbxPlz" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,252,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <TextBox x:Name="tbxOrt" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,326,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <TextBox x:Name="tbxTelefon" PreviewTextInput="tbxTelefon_PreviewTextInput" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,400,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <TextBox x:Name="tbxEmail" FontSize="24" HorizontalAlignment="Left" Height="42" Margin="240,474,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="279" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="2" Foreground="Black"/>
+        <DatePicker x:Name="tbxGebdatum" HorizontalAlignment="Left" Margin="240,548,0,0" VerticalAlignment="Top" Height="42" Width="279" FontSize="22" BorderThickness="2" BorderBrush="#393938" Background="#C9c9c7"/>
+        <Label Content="Nachname:" HorizontalAlignment="Left" Margin="1,30,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#393938"/>
+        <Label Content="Vorname:" HorizontalAlignment="Left" Margin="1,104,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Strasse:" HorizontalAlignment="Left" Margin="1,178,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Plz:" HorizontalAlignment="Left" Margin="1,252,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Ort:" HorizontalAlignment="Left" Margin="1,326,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Telefon:" HorizontalAlignment="Left" Margin="1,400,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="1,474,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Label Content="Geburtsdatum:" HorizontalAlignment="Left" Margin="1,548,0,0" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.306,0.451" Foreground="#393938"/>
+        <Button x:Name="btnInsertKunde" Content="Kunde Hinzufügen" HorizontalAlignment="Left" Height="60" Margin="561,530,0,0" VerticalAlignment="Top" Width="205" FontSize="20" Background="#C9c9c7" BorderBrush="#393938" BorderThickness="3" Click="btnInsert_Click" Foreground="#393938"/>
+
+    </Grid>
+</Window>

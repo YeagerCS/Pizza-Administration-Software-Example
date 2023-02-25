@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>a-pizza-icon-for-an-application-whichs-name-is-pizza-eaters-.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Picture1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="a-pizza-icon-for-an-application-whichs-name-is-pizza-eaters-.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.18.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Picture1.jpg" />
+  </ItemGroup>
+
+</Project>
